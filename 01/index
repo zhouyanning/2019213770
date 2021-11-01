@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My homepage</title>
+    <style>
+        .note{text-align: center}
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            grid-auto-rows: minmax(100px, auto);
+        }
+        .one {
+            grid-column: 1/4;
+            grid-row: 1;
+            background-color: #f8d29d;
+        }
+        .two {
+            grid-column: 1/4;
+            grid-row: 2;
+            background-color: #b5a87f;
+        }
+        .three {
+            grid-column: 1/4;
+            grid-row: 3;
+            background-color: #d0e4a9;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1 class="note">My homepage</h1>
+
+
+    <div class="wrapper">
+        <div class="one" align="center">
+            <picture>
+                <img src="https://tse1-mm.cn.bing.net/th/id/R-C.5070b1034ec0bf4a8662c82a6fdba419?rik=XluG5beA4AwpUA&riu=http%3a%2f%2fwww.desktx.com%2fd%2ffile%2fwallpaper%2fanimals%2f20180704%2fecfcdd35e72c51c9d5310747a246a83f.jpg&ehk=jWRW%2f%2f%2bA0DtQCgzDeRssqdQAeCFzsj7EcUUONncXQ5Q%3d&risl=&pid=ImgRaw&r=0.小雏菊.jpg"
+                     alt=""
+                     title="我是一只可爱的小猫咪，我叫小雏菊哟~."
+                     width="600" height="450" />
+            </picture>
+        </div>
+        <div class="two">
+            <h1>基本信息</h1>
+            <ul>
+                <li>姓名：小雏菊</li>
+                <li>英文名：daisy</li>
+            </ul>
+        </div>
+        <div class="three">
+            <h1>自我介绍</h1>
+            <p>“喵～喵～”，我是一只可爱的小猫咪。
+                我的耳朵尖尖的，特别灵敏。我的眼睛很有趣，白天还又大又圆的，到了晚上，就成了又细又长的了。我长着又细又长的胡须，嘴像两个孤形。
+                我的身体毛茸茸的，通体雪白。强壮有力的后腿，能让我飞速的奔跑。我从很高的地方跳下来也不会有事，因为我的脚底有厚厚的“肉垫”。
+                我还长着锋利的爪子。有了这两样东西，捉起老鼠可方便了！对了，我还长着又长又美丽的尾巴呢！</p>
+
+        </div>
+
+
+    </div>
+
+</body>
+</html>
