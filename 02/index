@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .l_box div {
+            text-align: center;
+            font-size: larger;
+            mso-ansi-font-weight: bolder;
+            float: left;
+            width: 50%;
+            height: 500px;
+            padding-left: 10px;
+            background-color: blue;
+        }
+        .l_box tr th,
+        .l_box tr td{
+            border: 1px solid black;
+        }
+        .r_box {
+            float: left;
+            right: 0;
+            width: 50%;
+            height: 500px;
+            background-color: antiquewhite;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="big_box">
+        <table class="l_box">
+            <tr>
+                <th></th>
+                <th>周一</th>
+                <th>周二</th>
+                <th>周三</th>
+                <th>周四</th>
+                <th>周五</th>
+            </tr>
+
+            <tr class="l">
+                <th>1-2</th>
+                <td class="l1">微机原理</td>
+                <td class="l2">web设计</td>
+                <td class="l3">windows</td>
+                <td class="l4">信息检索</td>
+                <td class="l5">操作系统</td>
+            </tr>
+
+            <tr>
+                <th>3-4</th>
+                <td class="l6">windows</td>
+                <td></td>
+                <td class="l7">操作系统</td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>5-6</th>
+                <td></td>
+                <td></td>
+                <td class="l8">信息检索</td>
+                <td class="l9">微机原理</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>7-8</th>
+                <td></td>
+                <td class="l10">微机原理</td>
+                <td></td>
+                <td class="l11">web设计</td>
+                <td></td>
+            </tr>
+
+        </table>
+
+            <div class="r_box">
+
+            </div>
+    </div>
+
+    <script>
+        let l1 = document.querySelector(".l1");
+        let l2 = document.querySelector(".l2");
+        let l3 = document.querySelector(".l3");
+        let l4 = document.querySelector(".l4");
+        let l5 = document.querySelector(".l5");
+        let l6 = document.querySelector(".l6");
+        let l7 = document.querySelector(".l7");
+        let l8 = document.querySelector(".l8");
+        let l9 = document.querySelector(".l9");
+        let l10 = document.querySelector(".l10");
+        let l11 = document.querySelector(".l11");
+        let l = document.querySelector(".l_box");
+        let r = document.querySelector(".r_box");
+        //let x=$("div").text();
+        l1.addEventListener("mouseover",function ()
+        {
+            r.innerText = "《微机原理与接口技术》是本专业一门重要专业基础课程，课程主要讲授微型计算机的体系结构、工作模式、8086CPU寻址方式、指令系统、汇编语言程序设计、存储器、并行接口8255A、可编程计数器／定时器8253等相关内容。";
+        })
+        l2.addEventListener("mouseover",function()
+        {
+            r.innerText = "《Web程序设计教程》是2009年07月浙江大学出版社出版的图书，作者是匡松。本书主要介绍了Web编程基础知识、网站建设基础知识、HTML页面设计、ASP程序设计、ASP对象、Web数据库程序设计、综合应用实例等内容。";
+        });
+        l3.addEventListener("mouseover",function ()
+        {
+            r.innerText = "windows在前述课程基础上，进一步介绍C#的可视化程序设计。内容包括：Windows程序设计原理；控件，窗体；Windows GDI+系统；文件及目录的操作。通过本课程的学习，你将可以摆脱单调的控制台窗口，初步掌握使用C#开发Windows窗口应用程序的技巧，使你的应用程序界面更优美，使用更方便，与Windows操作系统的结合更紧密，实现更强大的功能。";
+        })
+        l4.addEventListener("mouseover",function ()
+        {
+            r.innerText = "信息检索课程是为素质教育课程，是一门实用性、操作性很强的课程。以通俗易懂的语言、由易到难，通过大量生动有趣的案例和电影片段等视频素材，展现信息检索在衣食住行、提高综合素质、提高学习与工作效率、提升研究水平、撰写论文、申报科研项目以及提高企业竞争力等方面的益处与具体应用，讲授网络信息检索的基本方法、常用搜索引擎与自动翻译等工具的使用技巧、利用信息检索解决实际问题的流程。力图最大限度地提高学员的信息素养和灵活运用信息解决各种问题的能力。";
+        })
+        l5.addEventListener("mouseover",function ()
+        {
+            r.innerText = "《操作系统原理》是针对计算机科学技术专业三年级本科生开设的一门专业基础课程。本课程着重学生系统观的培养，通过重点讲述操作系统的内部结构、工作原理及典型技术的实现，使学生建立起对操作系统的整体及各个功能模块的认识，从而系统掌握计算机的专业知识，进一步提升学生的软件开发能力乃至系统软件开发能力。";
+        })
+        l6.addEventListener("mouseover",function ()
+        {
+            r.innerText = "windows课程在前述课程基础上，进一步介绍C#的可视化程序设计。内容包括：Windows程序设计原理；控件，窗体；Windows GDI+系统；文件及目录的操作。通过本课程的学习，你将可以摆脱单调的控制台窗口，初步掌握使用C#开发Windows窗口应用程序的技巧，使你的应用程序界面更优美，使用更方便，与Windows操作系统的结合更紧密，实现更强大的功能。";
+        })
+        l7.addEventListener("mouseover",function ()
+        {
+            r.innerText = "《操作系统原理》是针对计算机科学技术专业三年级本科生开设的一门专业基础课程。本课程着重学生系统观的培养，通过重点讲述操作系统的内部结构、工作原理及典型技术的实现，使学生建立起对操作系统的整体及各个功能模块的认识，从而系统掌握计算机的专业知识，进一步提升学生的软件开发能力乃至系统软件开发能力。";
+        })
+        l8.addEventListener("mouseover",function ()
+        {
+            r.innerText = "信息检索课程是为素质教育课程，是一门实用性、操作性很强的课程。以通俗易懂的语言、由易到难，通过大量生动有趣的案例和电影片段等视频素材，展现信息检索在衣食住行、提高综合素质、提高学习与工作效率、提升研究水平、撰写论文、申报科研项目以及提高企业竞争力等方面的益处与具体应用，讲授网络信息检索的基本方法、常用搜索引擎与自动翻译等工具的使用技巧、利用信息检索解决实际问题的流程。力图最大限度地提高学员的信息素养和灵活运用信息解决各种问题的能力。！";
+        })
+        l9.addEventListener("mouseover",function ()
+        {
+            r.innerText = "《微机原理与接口技术》是本专业一门重要专业基础课程，课程主要讲授微型计算机的体系结构、工作模式、8086CPU寻址方式、指令系统、汇编语言程序设计、存储器、并行接口8255A、可编程计数器／定时器8253等相关内容。";
+        })
+        l10.addEventListener("mouseover",function ()
+        {
+            r.innerText = "《微机原理与接口技术》是本专业一门重要专业基础课程，课程主要讲授微型计算机的体系结构、工作模式、8086CPU寻址方式、指令系统、汇编语言程序设计、存储器、并行接口8255A、可编程计数器／定时器8253等相关内容。";
+        })
+        l11.addEventListener("mouseover",function()
+        {
+            r.innerText = "《Web程序设计教程》是2009年07月浙江大学出版社出版的图书，作者是匡松。本书主要介绍了Web编程基础知识、网站建设基础知识、HTML页面设计、ASP程序设计、ASP对象、Web数据库程序设计、综合应用实例等内容。";
+        });
+
+
+        l.addEventListener("mouseout",function(){
+            r.innerHTML=""
+        })
+    </script>
+
+</body>
+</html>
